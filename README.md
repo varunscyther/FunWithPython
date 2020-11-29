@@ -1,2 +1,2 @@
 # FunWithPython
-Fun puzzule solutions with python
+Fun puzzle solutions with python
