@@ -205,7 +205,12 @@ def maintain_customer_detail() :
         else :
             customer_items = {x[1] : x[2]}
         customer_details[x[0]] = customer_items
-    print(customer_details)
+    sorted_customer_details = dict(sorted(customer_details.items()))
+    for customer, items in sorted_customer_details.items():
+        print(customer+":")
+        sorted_items = dict(sorted(items.items()))
+        for item, quantity in sorted_items.items():
+            print(item + " " + str(quantity))
 
 
 collect_data()
